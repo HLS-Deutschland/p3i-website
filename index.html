@@ -136,6 +136,17 @@
     padding:.9rem 1.1rem;margin-top:1.8rem;max-width:58ch;
   }
 
+  /* Person */
+  .person{display:grid;grid-template-columns:minmax(11rem,15rem) 1fr;gap:clamp(1.6rem,5vw,3.2rem);margin-top:2.2rem;align-items:start}
+  .person img{width:100%;height:auto;display:block;border:1px solid var(--line)}
+  .person h3{font-size:1.15rem;font-weight:400}
+  .person .role{
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin:.3rem 0 1.1rem;
+  }
+  .person p{color:var(--muted);max-width:58ch}
+  @media(max-width:620px){.person{grid-template-columns:1fr}.person img{max-width:15rem}}
+
   /* Fuß */
   footer{border-top:1px solid var(--line);padding:2.6rem 0 3.4rem}
   footer .cols{margin-top:0}
@@ -212,6 +223,35 @@
       <div class="pull">
         <p>P3I combines project preparation, digital intelligence and operating architecture so that
           complex initiatives can be understood, governed, tested and executed.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="name">
+    <div class="wrap">
+      <p class="label">The name</p>
+      <h2>P3I: Problem, Package, Process, Information.</h2>
+      <div class="cols two">
+        <div>
+          <h3>Problem</h3>
+          <p>Every initiative starts with a problem or an opportunity that is not yet clearly stated. We define it, so everyone works on the same thing.</p>
+        </div>
+        <div>
+          <h3>Package</h3>
+          <p>We structure it into something that can be assessed: scope, evidence, responsibilities and commercial logic.</p>
+        </div>
+        <div>
+          <h3>Process</h3>
+          <p>We design how the package is carried out, with governance, steps and owners, so it can move from plan to execution.</p>
+        </div>
+        <div>
+          <h3>Information</h3>
+          <p>Along the way the work produces prepared, checked and combined information that people can trust and act on.</p>
+        </div>
+      </div>
+      <div class="pull">
+        <p>Prepared information is what the system provides. Experience and thinking around the corner are what people add.
+          Together they make Symbiotic Intelligence, the idea behind our domain, <span class="sans">.si</span>.</p>
       </div>
     </div>
   </section>
@@ -385,7 +425,26 @@
             management informs the way P3I designs processes. Specialists are brought in for each
             project as needed.</p>
         </div>
-        
+
+      </div>
+
+      <div class="person" id="people">
+        <img src="portrait.jpg" alt="Gerhard Geschwinder" width="640" height="853" loading="lazy">
+        <div>
+          <h3>Gerhard Geschwinder</h3>
+          <p class="role">Managing Director, HLS Deutschland GmbH</p>
+          <p>More than 25 years of building and running businesses across Europe, Asia and Africa.</p>
+          <ul class="plain">
+            <li><strong style="font-weight:400;color:var(--ink)">Transformation consulting, Zurich (1998–2005).</strong>
+              Founded and led Geschwinder Consulting AG, advising large organisations on transformation and project management.</li>
+            <li><strong style="font-weight:400;color:var(--ink)">Cross-border business, Beijing (2003–2015).</strong>
+              Chairman and CEO of MCH Global Group: mining supply chain and specialty finance, transactions of more than €500M across 20+ markets.</li>
+            <li><strong style="font-weight:400;color:var(--ink)">Agriculture, Zambia (2016–2022).</strong>
+              Chairman of Agro-Pro Africa, developing 7,000 hectares of commercial farmland.</li>
+            <li><strong style="font-weight:400;color:var(--ink)">Energy, South Africa (2024–today).</strong>
+              Founder of Ubuntu Clean Energy, developing solar and battery storage projects of up to 240 MW.</li>
+          </ul>
+        </div>
       </div>
 
       <div class="cols two" style="margin-top:3rem">
